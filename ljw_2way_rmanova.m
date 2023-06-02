@@ -26,7 +26,7 @@ function [pf1, pf2, pinter] = ljw_2way_rmanova(anovadata, condition)
     numsub = size(anovadata, 1);
 
     %重新整理数据，变为可用rm_anova2处理的形式
-    tobesta = []
+    tobesta = [];
 
     for ii = 1:size(anovadata, 3)
         tobesta = [tobesta; anovadata(:, :, ii)];
